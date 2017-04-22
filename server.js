@@ -18,8 +18,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 app.use(express.static('app'));
 
 // routing
-require("./app/routing/apiRoutes")(app);
-require("./app/routing/htmlRoutes")(app);
+require("./app/routing/apiroutes")(app);
+require("./app/routing/htmlroutes")(app);
 
 // listener
 app.listen(PORT, function() {
