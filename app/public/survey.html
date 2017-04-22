@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="UTF-8">
+    <title>Survey</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container">
+    <h2>Survey Questions</h2>
+    <hr>
+    <h3><b>About You</b></h3>
+    <form method="POST" action="/api/friends">
+        <div class="form-group">
+            <label for="userName">Your Name (required)</label>
+            <input type="name" class="form-control" id="userName" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <label for="userPhoto">Link to Photo of You (required)</label>
+            <input type="photo" class="form-control" id="userPhoto" placeholder="Your Photo" required>
+        </div>
+    <hr>
+    All questions are on a scale of 1 - 5 (1 being strongly disagree, 5 being strongly agree) unless otherwise noted.
+    <br>
+    <br>
+    	<h3><b>Question 1</b></h3> 
+			<fieldset class="form-group">
+				<label for="question01">
+	    		You enjoy popular culture (going to the movies, watching television, enjoying social media, etc).
+				</label>
+				    <select class="form-control" class="form-control" id="question01" name="userScores[0]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 2</b></h3>
+			<fieldset class="form-group">
+				<label for="question02">
+		    	Are you a cat person or a dog person? (1 being you only love dogs, 5 being you only love cats.)
+				</label>
+				    <select class="form-control" class="form-control" id="question02" name="userScores[1]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 3</b></h3> 
+			<fieldset class="form-group">
+				<label for="question03">
+				You enjoy being around children.
+				</label>
+				    <select class="form-control" class="form-control" id="question03" name="userScores[2]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 4</b></h3> 
+			<fieldset class="form-group">
+				<label for="question04">
+				You're active and enjoy the outdoors.
+				</label>
+				    <select class="form-control" class="form-control" id="question04" name="userScores[3]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 5</b></h3> 
+			<fieldset class="form-group">
+				<label for="question05">
+				You enjoy geeky things (video games, comic books, etc).
+				</label>
+				    <select class="form-control" class="form-control" id="question05" name="userScores[4]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 6</b></h3> 
+			<fieldset class="form-group">
+				<label for="question06">
+				You enjoy being out, about, and around other people.
+				</label>
+				    <select class="form-control" class="form-control" id="question06" name="userScores[5]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 7</b></h3> 
+			<fieldset class="form-group">
+				<label for="question07">
+				You enjoy reading books and expanding your mind.
+				</label>
+				    <select class="form-control" class="form-control" id="question07" name="userScores[6]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 8</b></h3> 
+			<fieldset class="form-group">
+				<label for="question08">
+				You enjoy traveling (with your BFF, of course!)
+				</label>
+				    <select class="form-control" class="form-control" id="question08" name="userScores[7]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 9</b></h3> 
+			<fieldset class="form-group">
+				<label for="question09">
+				Please rate your political views (1 being very conservative, 5 being very liberal).
+				</label>
+				    <select class="form-control" class="form-control" id="question09" name="userScores[8]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5 (very liberal)</option>
+				    </select>
+			</fieldset>
+		<h3><b>Question 10</b></h3> 
+			<fieldset class="form-group">
+				<label for="question10">
+				You enjoy having time alone to recharge and practice self care.
+				</label>
+				    <select class="form-control" class="form-control" id="question10" name="userScores[9]">
+				        <option>1</option>
+				        <option>2</option>
+				        <option>3</option>
+				        <option>4</option>
+				        <option>5</option>
+				    </select>
+			</fieldset>
+    </form>
+    <br>
+    <br>
+    <button type="button" class="btn btn-primary btn-lg btn-block" id="submit"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Submit Survey</button>
+    </div>
+    <br>
+    <br>
+    <!-- modal window -->
+    <div id="bestFriendModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">X</button>
+				<h2 class="modal-title">Meet Your BFF!</h2>
+			</div>
+			<div class="modal-body">
+				<h2 id="bestFriendName"></h2>
+				<img id="bestFriendImg" src="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13116244_10107568960519320_7024834722285826624_o.jpg" onError="this.src='https://answers.atlassian.com/images/icons/profilepics/default.png'" width=500px alt="Best Friend">
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<!-- click event handler -->
+	<script type="text/javascript">
+	$('#submit').on("click", function() {
+		var userInput = {
+			userName: $('#userName').val().trim(),
+			userPhoto: $('#userPhoto').val().trim(),
+			userScores: [$('#question01').val().trim(), $('#question02').val().trim(), $('#question03').val().trim(), $('#question04').val().trim(), $('#question05').val().trim(), $('#question06').val().trim(), $('#question07').val().trim(), $('#question08').val().trim(), $('#question09').val().trim(), $('#question10').val().trim()]
+		}
+		var currentURL = window.location.origin;
+		$.post(currentURL + '/api/friends', userInput, function(data) {
+			$("#bestFriendName").text(data.name);
+			$("#bestFriendImg").attr("src", data.photo);
+			$("#bestFriendModal").modal("show");
+		});
+		return false;
+	});
+	</script>
+</body>
+</html>
